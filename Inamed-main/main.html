@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INAMED</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- header buscador -->
+    <header style="height: 10vh;">
+        <div class="header-top">
+            <div class="logo">
+                <img src="inacap.png" alt="Inacap">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="login">
+                <a href="#">Mi Sesión</a>
+            </div>
+        </div>
+        <!-- 2do header enlaces -->
+        <nav>
+            <ul>
+                <li><a href="#">Nuestra Red</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Seguros y Planes</a></li>
+                <li><a href="#">Especialidades</a></li>
+                <li><a href="#">Información al paciente</a></li>
+                <li><a href="#">Mundo Profesional</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="left-content">
+            <!-- Carrusel de imagenes -->
+            <section class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item active">
+                        <img src="med1.jpg" alt="slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="med3.jpg" alt="slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="med4.jpg" alt="slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="med5.jpg" alt="slide 4">
+                    </div>
+                </div>                
+                <!-- Flechas para el carrusel -->
+                <div class="carousel-controls">
+                    <button class="prev" id="prev">&#10094;</button>
+                    <button class="next" id="next">&#10095;</button>
+                </div>
+                <div class="dots" id="dots"></div>
+            </section>
+
+            <!-- Botones accesos rapidos -->
+            <section class="buttons-section">
+                <div class="button-group">
+                    <button class="main-button">Resultados de exámenes</button>
+                    <button class="main-button">Cotiza tu cirugía</button>
+                    <button class="main-button" id="workInfoBtn">Informacion del trabajo</button>
+                    <button class="main-button">Beneficios Dentales</button>
+                    <button class="main-button">Toma de muestras a domicilio</button>
+                </div>
+            </section>
+
+            <!-- Nuestra Red -->
+            <section class="services-section">
+                <h2>Nuestra Red</h2>
+                <div class="services">
+                    <div class="service-item">
+                        <img src="clinica.png" alt="Clinicas">
+                        <h3>Clínicas</h3>
+                    </div>
+                    <div class="service-item">
+                        <img src="hospital.png" alt="Centros Médicos">
+                        <h3>Centros Médicos</h3>
+                    </div>
+                    <div class="service-item">
+                        <img src="diente.png" alt="Clínicas Dentales">
+                        <h3>Clínicas Dentales</h3>
+                    </div>
+                    <div class="service-item">
+                        <img src="cancer.png" alt="Instituto del Cáncer">
+                        <h3>Instituto del Cáncer</h3>
+                    </div>
+                    <div class="service-item">
+                        <img src="busqueda.png" alt="Laboratorios">
+                        <h3>Laboratorios</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contenedor Videos -->
+        <aside class="video-column">
+            <div class="video-container">
+                <div class="video-overlay"></div> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eCjoNnS5k7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <div class="video-container">
+                <div class="video-overlay"></div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EJhMN9GGRbo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>            
+        </aside>
+
+        <!-- popup boton informacion trabajo -->
+        <div id="popup" class="popup">
+            <div class="articulo">
+                <h4>Introducción:</h4> 
+                <p>Esta es una responsive web diseñada por alumnos de primer año de la carrera Ingenieria en Informática INACAP Valparaíso, el cual ofrece una vista más realista del diseño presentado para la asignatura Modelamientos de Soluciones Informáticas con el docente Oscar Ascencio Alarcón.</p>
+            </div>
+            <div class="articulo">
+                <h4>Presentación:</h4> 
+                <p>La presentación de esta web, contempla varios pasos de elaboración.</p>
+                <p>1.- Concretar la idea de elaboración de la web, integrando una página inicial, gestión de usuarios, a través de un login para clientes / 
+                        trabajadores (médicos), pacientes para realizar citas médicas, médicos para consultar citas agendadas, historial de paciente, 
+                        actualizar tratamientos, realizar observaciones, cancelar citas.</p>
+                <p>2.- Diseño de flujograma para la elaboración y asignación de trabajo, mockup con el prediseño, feedback de mejora.</p>
+                <p>3.- Elaborar el diseño en distintos stacks a utilizar, los cuales se definieron Javascript, Tailwind, React.  </p>
+            </div>
+            <button id="closePopupBtn">Cerrar</button>
+        </div>
+    </main>
+    <footer>
+        <p>INAMED Copyright © 2024 | All Rights Reserved | Powered by EdJaSeLlo </p>
+    </footer>
+    <script src="code.js"></script>
+</body>
+</html>
